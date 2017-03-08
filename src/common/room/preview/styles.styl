@@ -1,0 +1,60 @@
+.preview
+    display: table;
+    width: 100%;
+    padding: 15pt 10pt;
+    
+    border-top: 3pt solid white;
+    cursor: pointer;
+    
+    &:last-child
+        border-bottom: 3pt solid white;
+        
+    &.active
+        background: white;
+    
+    &:not(.active):hover
+        background: #eee;
+    
+.left
+    display: table-cell;
+    vertical-align: top;
+    width: 1%;
+    
+    .image
+        width: 40pt;
+        height: 40pt;
+        border-radius: 50%;
+        background: #446CB3;
+
+.right
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 10pt;
+    
+    .name
+        font-size: 1em;
+        line-height: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 6pt;
+    
+    .info
+        font-size: 0.7em;
+        margin-top: 2pt;
+        line-height: 1;
+        
+        .item
+            display: inline-block;
+            vertical-align: middle;
+        
+        .row
+            .item
+                margin-right: 5pt;
+                
+                span[class^="icon-"]
+                    margin-right: 2pt;
+        
+        .row:not(:last-child)
+            margin-bottom: 5pt;
+        

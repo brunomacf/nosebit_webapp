@@ -1,0 +1,38 @@
+.card
+    //width: 100pt;
+    //height: 200pt;
+    //margin: 0 30pt 30pt 0;
+    padding: 20pt;
+    background: #f5f5f5;
+    margin-bottom: 15pt;
+    
+    cursor: pointer;
+    
+    &:hover
+        background: #eee;
+
+.room-name
+    font-weight: 500;
+
+.info
+    font-size: 0.7em;
+    margin-top: 7pt;
+    line-height: 1;
+    
+    .item
+        display: inline-block;
+        vertical-align: middle;
+    
+    .row
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        .item
+            margin-right: 5pt;
+            
+            span[class^="icon-"]
+                margin-right: 2pt;
+    
+    .row:not(:last-child)
+        margin-bottom: 5pt;

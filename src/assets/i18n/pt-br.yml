@@ -1,0 +1,77 @@
+lang: pt-br
+
+formats:
+    datetime: DD/MM/YYYY HH:mm:ss
+    date: DD/MM/YYYY
+    time: HH:mm:ss
+
+dictionary:
+    _LOADING_: Carregando
+    _SEND_: Enviar
+    _SIGNUP_: Cadastrar
+    _SIGNIN_: Entrar
+    _CONTINUE_: Continuar
+    _FINALIZE_: Finalizar
+    _UPDATE_: Atualizar
+    _YES_: Sim
+    _NO_: Não
+
+    _NAV_BAR_MESSAGES_ITEM_LABEL_: Mensagens
+    _NAV_BAR_EXPLORE_ITEM_LABEL_: Explorar
+    _NAV_BAR_CREATE_ITEM_LABEL_: Criar
+
+    _ROOM_MEMBER_LABEL_: membro
+    _ROOM_MEMBERS_LABEL_: membros
+
+    _LOADING_ROOMS_: Carregando salas ...
+    _LOADING_MESSAGES_: Carregando mensagens ...
+    _YOU_ARE_MEMBER_OF_NO_ROOM_: Você não é membro sala alguma
+
+    _CREATE_ROOM_PAGE_TITLE_: Criar Nova Sala
+    _CREATE_ROOM_PAGE_NAME_FIELD_LABEL_: nome da sala
+    _CREATE_ROOM_PAGE_NAME_FIELD_PLACEHOLDER_: Sala dos Nirvanas
+    _CREATE_ROOM_PAGE_LOCKED_FIELD_LABEL_: Sala Privada?
+    _CREATE_ROOM_PAGE_LOCKED_FIELD_LOCKED_DESCRIPTION_: Numa sala <b>privada</b> apenas usuários que são membros aprovados podem ver as mensagens da sala. Usuários podem até requisitar se tornar um novo membro da sala, mas essa requisição deve ser aprovada por algum membro atual.
+    _CREATE_ROOM_PAGE_LOCKED_FIELD_UNLOCKED_DESCRIPTION_: Numa sala <b>pública</b> qualquer usuário pode virar membro e todos os usuários podem ver as mensagens da sala.
+    _CREATE_ROOM_PAGE_MAX_MEMBER_COUNT_FIELD_LABEL_: número máximo de membros
+    _CREATE_ROOM_PAGE_MAX_MEMBER_COUNT_FIELD_PLACEHOLDER_: "200"
+    _CREATE_ROOM_PAGE_MAX_VISITORS_COUNT_FIELD_LABEL_: número máximo de visitantes
+    _CREATE_ROOM_PAGE_MAX_VISITORS_COUNT_FIELD_PLACEHOLDER_: "200"
+    _CREATE_ROOM_PAGE_TAGS_FIELD_LABEL_: Tags
+    _CREATE_ROOM_PAGE_TAGS_FIELD_PLACEHOLDER_: -- selecionar --
+    _CREATE_ROOM_PAGE_LOCATION_FIELD_LABEL_: Localização
+    _CREATE_ROOM_PAGE_LOCATION_FIELD_PLACEHOLDER_: nome do local
+    _CREATE_ROOM_PAGE_SUBMIT_BUTTON_TEXT_: Criar Sala
+
+    _LOGIN_FIELD_LABEL_: usuário ou email
+    _LOGIN_FIELD_PLACEHOLDER_: chucknoris
+    _PASSWORD_FIELD_LABEL_: senha
+    _PASSWORD_FIELD_PLACEHOLDER_: ••••••sigiloso
+    _FULLNAME_FIELD_LABEL_: nome completo
+    _FULLNAME_FIELD_PLACEHOLDER_: Chuck Norris
+    _EMAIL_FIELD_LABEL_: email
+    _EMAIL_FIELD_PLACEHOLDER_: chucknoris@foda.com
+    _NICKNAME_FIELD_LABEL_: nome de usuário
+    _NICKNAME_FIELD_PLACEHOLDER_: chucknorris
+    _UNMASK_PASSWORD_LABEL: MOSTRAR
+    _MASK_PASSWORD_LABEL: ESCONDER
+    _SOME_FIELD_PLACEHOLDER_: sou um placeholder
+    _SIGNUP_STEP_2_TEXT_1_: Top! Sua conta foi criada. Tivemos a audácia de escolher seu nome de usuário como <b>{{nickName}}</b>, o qual representa como você será identificado no Lero. Sinta-se a vontade para alterá-lo no campo abaixo e depois bora continuar...
+    _SIGNUP_STEP_3_TEXT_1_: "Prontoooo! Última coisa agora ... selecione abaixo 3 termos que mais te chamam atenção"
+    _SIGNUP_STEP3_ERROR_MANY_TERMS_SELECTED_: "Gulosa você hein! São só 3 termos :)"
+    _SIGNUP_STEP3_ERROR_NO_TERMS_SELECTED_: "Escolha pelo menos um termo"
+
+    _SEND_MESSAGE_FIELD_PLACEHOLDER_: escreva aqui a sua mensagem
+
+    _FIELD_ERROR_REQUIRED_: Este campo é obrigatório
+    _FIELD_ERROR_EMAIL_: Digite um endereço de email válido
+    _FIELD_ERROR_NICKNAME_CHECK_: Esse nome já está em uso. Escolha outro por obséquio...
+    _FIELD_ERROR_DIGITS_: Apenas números são permitidos neste campo.
+
+    _SIGNUP_SUCCESS_TOAST_MESSAGE_: Conta criada com sucesso.
+    _ROOM_CREATE_SUCCESS_TOAST_MESSAGE_: Sala criada com sucesso.
+
+    _AUTH_ERROR_2_: Nome de usuário, email ou senha incorretos.
+    _ROOM_ERROR_2_: Ops... Alguma informação está incorreta.
+    _USER_ERROR_6_: Email já cadastrado.
+    _USER_ERROR_7_: Nome de usuário já cadastrado.

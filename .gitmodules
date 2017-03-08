@@ -1,0 +1,3 @@
+[submodule "reakit"]
+	path = reakit
+	url = git@github.com:nosebit/reakit.git

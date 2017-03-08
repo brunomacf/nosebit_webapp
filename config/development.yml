@@ -1,0 +1,10 @@
+webinfo:
+    #mixpanel_key: 0c9e1048c3d7c85d826448b2bab8a00b
+    base_url: //nosebit.dev
+    logo_icon_url: //nosebit.dev/assets/images/logo_icon.png
+    logo_favicon_url: //nosebit.dev/assets/images/favicon.png
+
+hostnames:
+    webapp: nosebit.dev
+    api: api.nosebit.dev
+    socket: socket.nosebit.dev

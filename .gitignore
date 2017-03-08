@@ -3,7 +3,6 @@
 
 # Ignore npm and dist folders
 node_modules
-dist
 
 # Ignore local config files
 config/local*
