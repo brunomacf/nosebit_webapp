@@ -59,6 +59,11 @@ gulp.task('assets:404', function() {
     .pipe(gulp.dest(config.dest));
 });
 
+gulp.task('assets:CNAME', function() {
+    return gulp.src(config.src["CNAME"])
+    .pipe(gulp.dest(config.dest));
+});
+
 /****************************************************************
 * i18n Task : compile i18n yaml setups
 ****************************************************************/
@@ -144,7 +149,8 @@ gulp.task('production', [
     'pug',
     'i18n',
     'bundler',
-    'assets:404'
+    'assets:404',
+    'assets:CNAME'
 ]);
 
 

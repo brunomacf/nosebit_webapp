@@ -9,6 +9,7 @@ module.exports = {
     src: {
         html: './src/index.pug',
         404: './src/404.html',
+        CNAME: './src/CNAME',
         sitemap: './src/sitemap.xml',
         main_js: './src/main.jsx',
         js: ['./src/**/*.js', './src/**/*.jsx'],
