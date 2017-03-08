@@ -4,7 +4,7 @@ let lodash = require('lodash'),
 module.exports = {
     appConfig: JSON.parse(JSON.stringify(config)),
 
-    dest: './dist',
+    dest: './docs',
 
     src: {
         html: './src/index.pug',
