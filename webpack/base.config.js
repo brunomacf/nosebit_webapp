@@ -14,7 +14,7 @@ module.exports = {
             "react-router",
             "mapbox-gl/dist/mapbox-gl.js",
             "mapbox",
-            "reakit/src"
+            "reakit"
         ]
     },
     output: {
@@ -91,7 +91,7 @@ module.exports = {
         modules: [
             path.resolve(__dirname, ".."),
             path.resolve(__dirname, "../src"),
-            path.resolve(__dirname, "../reakit/src"),
+            //path.resolve(__dirname, "../reakit/src"),
             path.resolve(__dirname, "../node_modules")
         ],
         extensions: [".js",".jsx",".styl",".png",".jpg",".css"]

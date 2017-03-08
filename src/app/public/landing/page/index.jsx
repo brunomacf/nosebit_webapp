@@ -1,8 +1,8 @@
 import React from "react";
 import {Link} from "react-router";
-import {LoggerFactory} from "reakit/src/utils";
+import {LoggerFactory} from "reakit/lib/utils";
 //import i18n from "reakit/src/i18n";
-import Bar from "reakit/src/bar";
+import Bar from "reakit/lib/bar";
 import logoIcon from "assets/images/logo_icon.png";
 import styles from "./styles";
 

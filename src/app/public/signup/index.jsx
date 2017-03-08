@@ -1,6 +1,6 @@
 import React from "react";
 import {withRouter} from "react-router";
-import {LoggerFactory} from "reakit/src";
+import {LoggerFactory} from "reakit/lib/utils";
 import styles from "./styles";
 import Step1 from "./step1";
 import Step2 from "./step2";

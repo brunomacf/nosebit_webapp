@@ -1,5 +1,5 @@
 import React from "react";
-import {LoggerFactory, Toaster} from "reakit/src";
+import {LoggerFactory, Toaster} from "reakit/lib";
 //import Redux from "utils/redux";
 import styles from "./styles";
 

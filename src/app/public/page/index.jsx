@@ -1,5 +1,5 @@
 import React from "react";
-import {LoggerFactory} from "reakit/src/utils";
+import {LoggerFactory} from "reakit/lib/utils";
 
 let Logger = new LoggerFactory("public.page");
 

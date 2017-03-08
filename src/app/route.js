@@ -1,4 +1,5 @@
-import {LoggerFactory,Redux,i18n} from "reakit/src";
+import {LoggerFactory,Redux} from "reakit/lib/utils";
+import i18n from "reakit/lib/i18n";
 //import {User} from "common";
 
 let Logger = new LoggerFactory("app.route");

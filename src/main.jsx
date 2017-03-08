@@ -5,7 +5,9 @@ import {render} from "react-dom";
 import {Provider} from "react-redux";
 import {Router,browserHistory} from "react-router";
 import {syncHistoryWithStore,routerReducer} from "react-router-redux";
-import {Toaster,i18n,LoggerFactory,Redux} from "reakit/src";
+import {LoggerFactory,Redux} from "reakit/lib/utils";
+import Toaster from "reakit/lib/toaster";
+import i18n from "reakit/lib/i18n";
 
 let Logger = new LoggerFactory("main");
 
