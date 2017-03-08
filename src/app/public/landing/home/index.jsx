@@ -126,7 +126,7 @@ export default class Component extends React.Component {
                                     <div className={styles.overlay}></div>
                                     <div className={styles.infoBox}>
                                         <div className={styles.name}>Chuck Norris</div>
-                                        <div className={styles.position}>Call To Action</div>
+                                        <div className={styles.position}>CTA</div>
                                     </div>
                                 </div>
                             </Grid.Cell>
@@ -135,7 +135,7 @@ export default class Component extends React.Component {
                                     <div className={styles.overlay}></div>
                                     <div className={styles.infoBox}>
                                         <div className={styles.name}>MacGyver</div>
-                                        <div className={styles.position}>Call To Action</div>
+                                        <div className={styles.position}>CTA</div>
                                     </div>
                                 </div>
                             </Grid.Cell>
