@@ -54,6 +54,11 @@ gulp.task('assets', function() {
     .pipe(gulp.dest(config.dest+"/assets"));
 });
 
+gulp.task('assets:images', function() {
+    return gulp.src(config.src["images"])
+    .pipe(gulp.dest(config.dest+"/assets/images"));
+});
+
 gulp.task('assets:404', function() {
     return gulp.src(config.src["404"])
     .pipe(gulp.dest(config.dest));
@@ -161,5 +166,6 @@ gulp.task('default', [
     'clean',
     'config',
     'assets',
+    'assets:images',
     process.env.NODE_ENV||'production'
 ]);

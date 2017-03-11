@@ -11,6 +11,10 @@ module.exports = {
         404: './src/404.html',
         CNAME: './src/CNAME',
         sitemap: './src/sitemap.xml',
+        images: [
+            'src/assets/images/logo_icon.png',
+            'src/assets/images/favicon.png'
+        ],
         main_js: './src/main.jsx',
         js: ['./src/**/*.js', './src/**/*.jsx'],
         assets: ['./src/assets/icons/**/*'],

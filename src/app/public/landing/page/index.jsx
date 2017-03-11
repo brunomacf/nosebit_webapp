@@ -3,7 +3,6 @@ import {Link} from "react-router";
 import {LoggerFactory} from "reakit/lib/utils";
 //import i18n from "reakit/src/i18n";
 import Bar from "reakit/lib/bar";
-import logoIcon from "assets/images/logo_icon.png";
 import styles from "./styles";
 
 let Logger = new LoggerFactory("landing.page");
@@ -34,7 +33,7 @@ export default class Component extends React.Component {
                             <Bar.Menu togglable={false}>
                                 <Bar.Item>
                                     <Link to="/">
-                                        <img className={styles.logo} src={logoIcon} />
+                                        <img className={styles.logo} src="/assets/images/logo_icon.png" />
                                     </Link>
                                 </Bar.Item>
                             </Bar.Menu>
