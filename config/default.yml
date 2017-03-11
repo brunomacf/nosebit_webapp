@@ -3,7 +3,7 @@ siteinfo:
     title: Nosebit
     keywords: startup,tech,chat
     #fb_app_id: 250528625300602
-    #mixpanel_key: cd89107f218f244fd5e91772fd041fbe
+    mixpanel_key: 30b9a03d49ac92fa7e9eea918f88cba1
     #analytics_key: UA-79995910-2
     #optimizely_key: 5385733009
     #google_maps_key: AIzaSyDOko7oldevlasKPWl1x1sqZje1nzBZNvk

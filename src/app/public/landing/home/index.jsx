@@ -1,7 +1,14 @@
 import React from "react";
-import {LoggerFactory} from "reakit/lib/utils";
+import mixpanel from "mixpanel";
+import classNames from "classnames";
+import {LoggerFactory,Redux} from "reakit/lib/utils";
 import Container from "reakit/lib/container";
 import Grid from "reakit/lib/grid";
+import Form from "reakit/lib/form";
+import Field from "reakit/lib/field";
+import Text from "reakit/lib/text";
+import Button from "reakit/lib/button";
+import Toaster from "reakit/lib/toaster";
 import brunoPhoto from "assets/images/team/bruno.jpg";
 import chuckPhoto from "assets/images/team/chuck.jpg";
 import macgyverPhoto from "assets/images/team/macgyver.jpg";
@@ -18,9 +25,39 @@ export default class Component extends React.Component {
     static defaultProps = {};
     static propTypes = {};
 
+    state = {};
+
     componentDidMount() {
         let logger = Logger.create("componentDidMount");
         logger.info("enter");
+
+        Form.registerValidator({
+            name: "phone",
+            validate: (value) => {
+                if(!value) {return true;}
+
+                return (/[0-9]+/).test(value);
+            }
+        });
+    }
+
+    onFormSubmit(data) {
+        this.setState({formLoading: true});
+
+
+        return new Promise((resolve) => {
+            // Send to mixpanel
+            mixpanel.track("Contact Submit", data, () => {
+                this.setState({formLoading: false});
+
+                    // Test toaster
+                Redux.shared.store.dispatch(
+                    Toaster.actions.push("info", "Formulário enviado com sucesso")
+                );
+
+                resolve({name: "", email: "", description: ""});
+            });
+        });
     }
 
     render() {
@@ -104,6 +141,61 @@ export default class Component extends React.Component {
                                 </li>
                             </ul>
                         </div>
+                    </Container>
+                </div>
+
+                <div className={styles.formSection}>
+                    <Container size="sm">
+                        <h3 className={styles.title}>Vamos conversar sobre seu problema?</h3>
+
+                        <Form onSubmit={this.onFormSubmit}
+                            loading={this.state.formLoading}>
+                            <Field.Section>
+                                <Text scale={0.8}>seu nome <span className={classNames(["icon-asterisk2", styles.asterisk])}></span></Text>
+                                <Field.Text scale={1.5} name="name" validators="$required"/>
+                                <Field.Error
+                                    for="name" 
+                                    validator="$required"
+                                    message="esse campo é obrigatório"/>
+                            </Field.Section>
+
+                            <Field.Section>
+                                <Text scale={0.8}>seu email <span className={classNames(["icon-asterisk2", styles.asterisk])}></span></Text>
+                                <Field.Text scale={1.5} name="email" validators="$required|$email"/>
+                                <Field.Error
+                                    for="email" 
+                                    validator="$required"
+                                    message="esse campo é obrigatório"/>
+                                <Field.Error
+                                    for="email" 
+                                    validator="$email"
+                                    message="insira um email válido"/>
+                            </Field.Section>
+
+                            <Field.Section>
+                                <Text scale={0.8}>seu telefone</Text>
+                                <Field.Text scale={1.5} name="phone" validators="phone"/>
+                                <Field.Error
+                                    for="phone" 
+                                    validator="phone"
+                                    message="apenas números são permitidos"/>
+                            </Field.Section>
+
+                            <Field.Section>
+                                <Text scale={0.8}>descreva sua idéia <span className={classNames(["icon-asterisk2", styles.asterisk])}></span></Text>
+                                <Field.Text scale={1.5} name="description" validators="$required"/>
+                                <Field.Error
+                                    for="description" 
+                                    validator="$required"
+                                    message="esse campo é obrigatório"/>
+                            </Field.Section>
+
+                            <Field.Section>
+                                <Button type="submit" scale={1.5}>
+                                    Enviar
+                                </Button>
+                            </Field.Section>
+                        </Form>
                     </Container>
                 </div>
 

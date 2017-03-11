@@ -96,6 +96,9 @@ module.exports = {
         ],
         extensions: [".js",".jsx",".styl",".png",".jpg",".css"]
     },
+    externals: {
+        "mixpanel": "mixpanel"
+    },
     node: {
         console: true,
         process: true,
