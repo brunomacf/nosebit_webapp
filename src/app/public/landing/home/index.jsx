@@ -1,6 +1,7 @@
 import React from "react";
 import mixpanel from "mixpanel";
 import classNames from "classnames";
+import lodash from "lodash";
 import {LoggerFactory,Redux} from "reakit/lib/utils";
 import Container from "reakit/lib/container";
 import Grid from "reakit/lib/grid";
@@ -30,6 +31,10 @@ export default class Component extends React.Component {
     componentDidMount() {
         let logger = Logger.create("componentDidMount");
         logger.info("enter");
+
+        mixpanel.track("Page Open", {
+            location: lodash.get(this.props, "location.pathname")
+        });
 
         Form.registerValidator({
             name: "phone",
